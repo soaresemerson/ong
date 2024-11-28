@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alunos.AlunosFragmentAdcionar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="381dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Adicionar_Nome_aluno"
+                    android:layout_width="382dp"
+                    android:layout_height="70dp"
+                    android:hint="Nome do aluno"
+                    android:textColorHint="@color/design_default_color_error" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="385dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Adcionar_Responsavel_Aluno"
+                    android:layout_width="382dp"
+                    android:layout_height="65dp"
+                    android:hint="Responsavel"
+                    android:textColorHint="@color/design_default_color_error" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:text="Telefone"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/Adcionar_telefone_Aluno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"
+                android:text="Endereco"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="07dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Adcionar_Cep_Aluno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cep" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="07dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Adicionar_Endereco_Aluno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Digite o endereço" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="07dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Adcionar_Numero_Aluno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Numero" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="07dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Adcionar_Bairro_Aluno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bairro" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="07dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Adcionar_Cidade_Aluno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cidade" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="07dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Adcionar_Estado_Aluno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Estado" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="391dp"
+                android:layout_height="41dp"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:text="Observações"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="07dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Adicionar_observacao_Aluno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Digite observações se necessário" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_salvar_aluno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#775AAC"
+                    android:text="Salvar" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

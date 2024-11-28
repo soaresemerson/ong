@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alunos.AlunosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:text="Gerenciar Alunos"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_listar_alunos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#775AAC"
+                android:text="Listar Alunos" />
+
+            <Button
+                android:id="@+id/buttton_Adiconar_alunos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#775AAC"
+                android:text="Adcionar alunos" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_alunos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1DAFA2">
+
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

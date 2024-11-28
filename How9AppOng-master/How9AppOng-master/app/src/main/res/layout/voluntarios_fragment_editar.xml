@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".voluntarios.VoluntariosFragmentEditar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textEditar_Nome_Voltuntario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome do Voluntário"
+                android:textColorHint="@color/design_default_color_error" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textEditar_Especializacao_Voltuntario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Especialização"
+                android:textColorHint="@color/design_default_color_error" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="Telefone"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/textEditar_Telefone_Voltuntario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="Função"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textEditar_Funcao_Voltuntario"
+                android:layout_width="match_parent"
+                android:layout_height="99dp"
+                android:hint="Digite  a funcao" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_editar_voluntario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#775AAC"
+                android:padding="10dp"
+                android:text="@string/editar" />
+
+            <Button
+                android:id="@+id/button_excluir_voluntario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#775AAC"
+                android:text="@string/excluir" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
